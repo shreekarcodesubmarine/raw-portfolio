@@ -213,10 +213,15 @@ function populatePhotos(dataArray, gridId) {
 }
 
 // Execute the functions using our data.js arrays
-populateVideos(reelsData, 'reels-grid');
-populateVideos(shortsData, 'shorts-grid');
-populatePhotos(photosData, 'photos-grid');
+// 1. Filter the master list into specific categories
+const filteredReels = window.reelsData.filter(item => item.category === "Reels" || item.category === "Edits");
+const filteredShorts = window.reelsData.filter(item => item.category === "Short_Films");
+const filteredPhotos = window.reelsData.filter(item => item.category === "Photos");
 
+// 2. Feed the filtered lists into your grids
+populateVideos(filteredReels, 'reels-grid');
+populateVideos(filteredShorts, 'shorts-grid');
+populatePhotos(filteredPhotos, 'photos-grid');
 // 4. Initialize the Media Player
 const lightbox = GLightbox({
     touchNavigation: true,
