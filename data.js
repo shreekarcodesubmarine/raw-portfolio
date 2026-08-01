@@ -1,4 +1,4 @@
-const reelsData = [
+window.reelsData = [
   // ---------------- PHOTOS (20 Items) ----------------
   { id: 1, category: "Photos", src: "./Assets/Photos/omi.underscore_14050509_215911390.jpg.jpeg", title: "p1", description: "Photo 1" },
   { id: 2, category: "Photos", src: "./Assets/Photos/omi.underscore_14050509_215911388.jpg.jpeg", title: "p2", description: "Photo 2" },
