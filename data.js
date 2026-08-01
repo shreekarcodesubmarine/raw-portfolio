@@ -38,5 +38,3 @@ const reelsData = [
   // --------------- SHORT FILMS (1 Item) ---------------
   { id: 31, category: "Short_Films", src: "./Assets/Short_Films/film1.mp4", title: "v11", description: "Video 11" }
 ];
-export default portfolioData;
-];
